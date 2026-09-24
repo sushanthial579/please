@@ -1,0 +1,1189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
+
+    <meta name="theme-color" content="#ff5c8a">
+
+    <title>For MANGRAJ JII💗</title>
+
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+
+        body {
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #ff9fbd,
+                    transparent 40%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ff5c8a,
+                    #8e44ad
+                );
+
+            color: white;
+        }
+
+
+        /* =========================
+           PAGE
+        ========================== */
+
+        .page {
+
+            position: fixed;
+
+            inset: 0;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            transform: scale(0.95);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease,
+                visibility 0.7s;
+        }
+
+
+        .page.active {
+
+            opacity: 1;
+
+            visibility: visible;
+
+            transform: scale(1);
+        }
+
+
+        /* =========================
+           CARD
+        ========================== */
+
+        .card {
+
+            width: min(500px, 94vw);
+
+            max-height: 92vh;
+
+            overflow-y: auto;
+
+            padding: 30px 25px;
+
+            text-align: center;
+
+            border-radius: 30px;
+
+            background:
+                rgba(255, 255, 255, 0.16);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.3);
+
+            backdrop-filter: blur(15px);
+
+            box-shadow:
+                0 20px 60px
+                rgba(0,0,0,0.25);
+
+            animation:
+                cardAppear 1s ease;
+        }
+
+
+        @keyframes cardAppear {
+
+            from {
+
+                transform:
+                    translateY(30px);
+
+                opacity: 0;
+            }
+
+            to {
+
+                transform:
+                    translateY(0);
+
+                opacity: 1;
+            }
+
+        }
+
+
+        /* =========================
+           GIF
+        ========================== */
+
+        .gif {
+
+            width: 190px;
+
+            max-width: 70%;
+
+            border-radius: 20px;
+
+            margin-bottom: 20px;
+
+            filter:
+                drop-shadow(
+                    0 10px 20px
+                    rgba(0,0,0,.2)
+                );
+        }
+
+
+        /* =========================
+           HEADINGS
+        ========================== */
+
+        h1 {
+
+            font-size:
+                clamp(28px, 7vw, 42px);
+
+            margin-bottom: 18px;
+
+            text-shadow:
+                0 3px 10px
+                rgba(0,0,0,.2);
+        }
+
+
+        h2 {
+
+            font-size:
+                clamp(20px, 5vw, 28px);
+
+            margin: 18px 0;
+        }
+
+
+        p {
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            margin: 8px 0;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .next-btn,
+        .yes-btn,
+        .no-btn {
+
+            border: none;
+
+            padding: 14px 25px;
+
+            border-radius: 50px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+            margin-top: 20px;
+        }
+
+
+        .next-btn {
+
+            background: white;
+
+            color: #e84376;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.2);
+        }
+
+
+        .next-btn:hover {
+
+            transform: scale(1.08);
+        }
+
+
+        /* =========================
+           BIG MESSAGE
+        ========================== */
+
+        .big-message {
+
+            padding: 20px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(255,255,255,.12);
+
+            margin: 20px 0;
+        }
+
+
+        .big-message p:first-child {
+
+            font-size: 65px;
+        }
+
+
+        /* =========================
+           DRAMATIC BOX
+        ========================== */
+
+        .dramatic-box {
+
+            padding: 20px;
+
+            margin: 20px 0;
+
+            border-radius: 20px;
+
+            background:
+                rgba(0,0,0,.15);
+        }
+
+
+        .dramatic-box h2 {
+
+            color: #fff5fa;
+        }
+
+
+        /* =========================
+           FRIEND PHOTO
+        ========================== */
+
+        .friend-photo {
+
+            width: 190px;
+
+            height: 190px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border:
+                5px solid white;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(0,0,0,.3);
+        }
+
+
+        /* =========================
+           CALL ICON
+        ========================== */
+
+        .call-icon {
+
+            font-size: 75px;
+
+            animation:
+                phoneShake 1s infinite;
+        }
+
+
+        @keyframes phoneShake {
+
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+
+            20% {
+                transform: rotate(-12deg);
+            }
+
+            40% {
+                transform: rotate(12deg);
+            }
+
+            60% {
+                transform: rotate(-8deg);
+            }
+
+            80% {
+                transform: rotate(8deg);
+            }
+
+        }
+
+
+        /* =========================
+           YES / NO
+        ========================== */
+
+        .buttons {
+
+            position: relative;
+
+            min-height: 100px;
+
+            margin-top: 15px;
+        }
+
+
+        .yes-btn {
+
+            background: #fff;
+
+            color: #e84376;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,.25);
+        }
+
+
+        .yes-btn:hover {
+
+            transform: scale(1.1);
+        }
+
+
+        .no-btn {
+
+            background:
+                rgba(0,0,0,.25);
+
+            color: white;
+
+            position: relative;
+        }
+
+
+        /* =========================
+           FLOATING HEARTS
+        ========================== */
+
+        .heart-particle {
+
+            position: fixed;
+
+            bottom: -30px;
+
+            pointer-events: none;
+
+            animation:
+                floatHeart
+                5s linear forwards;
+
+            z-index: 10;
+        }
+
+
+        @keyframes floatHeart {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================
+           FINAL PAGE
+        ========================== */
+
+        .final-page {
+
+            background:
+                radial-gradient(
+                    circle,
+                    #ff7da5,
+                    #7d3c98
+                );
+        }
+
+
+        .fireworks {
+
+            font-size: 55px;
+
+            animation:
+                fireworks
+                1s infinite alternate;
+        }
+
+
+        @keyframes fireworks {
+
+            from {
+
+                transform:
+                    scale(.9);
+            }
+
+            to {
+
+                transform:
+                    scale(1.15);
+            }
+
+        }
+
+
+        .heart {
+
+            font-size: 80px;
+
+            animation:
+                heartbeat
+                1s infinite;
+        }
+
+
+        @keyframes heartbeat {
+
+            0%,100% {
+
+                transform:
+                    scale(1);
+            }
+
+            50% {
+
+                transform:
+                    scale(1.3);
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 600px) {
+
+            .page {
+
+                padding: 12px;
+            }
+
+
+            .card {
+
+                padding:
+                    24px 18px;
+
+                border-radius: 25px;
+            }
+
+
+            .gif {
+
+                width: 160px;
+            }
+
+
+            p {
+
+                font-size: 16px;
+            }
+
+
+            h1 {
+
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         BACKGROUND MUSIC
+    ========================== -->
+
+    <audio id="bgMusic" loop>
+
+        <source
+            src="WhatsApp Audio 2026-09-24 at 10.50.46 PM.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- Floating hearts will appear here -->
+
+    <div id="hearts"></div>
+
+
+
+    <!-- =====================================================
+         PAGE 1
+    ====================================================== -->
+
+    <section class="page active">
+
+        <div class="card">
+
+            <img
+                src="hii.gif"
+                class="gif"
+                alt="Cute GIF">
+
+            <h1>
+                Hey MANGRAJ JII 💗
+            </h1>
+
+            <p class="typing">
+                I have a very important message for you...
+            </p>
+
+            <button
+                class="next-btn"
+                onclick="nextPage()">
+
+                Open it 💌
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 2
+    ====================================================== -->
+
+    <section class="page">
+
+        <div class="card">
+
+            <img
+                src="listen.gif"
+                class="gif"
+                alt="Cute GIF">
+
+            <h1>
+                Okay... Listen 🥺
+            </h1>
+
+            <p>
+                I know you're busy...
+            </p>
+
+            <p>
+                I know you have things to do...
+            </p>
+
+            <p>
+                BUT...
+            </p>
+
+            <h2>
+                There is one tiny request 👉👈
+            </h2>
+
+            <button
+                class="next-btn"
+                onclick="nextPage()">
+
+                What request? 👀
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 3
+    ====================================================== -->
+
+    <section class="page">
+
+        <div class="card">
+
+            <img
+                src="milk-and-mocha-please.gif"
+                class="gif"
+                alt="Cute GIF">
+
+            <h1>
+                Just one thing... 🥹
+            </h1>
+
+            <div class="big-message">
+
+                <p>
+                    📞
+                </p>
+
+                <h2>
+                    PLEASE MAKE A VOICE CALL
+                </h2>
+
+                <p>
+                    Even for a little while...
+                </p>
+
+            </div>
+
+            <button
+                class="next-btn"
+                onclick="nextPage()">
+
+                But WHY? 🤨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 4
+    ====================================================== -->
+
+    <section class="page">
+
+        <div class="card">
+
+            <img
+                src="couple-forgive-me.gif"
+                class="gif"
+                alt="Cute GIF">
+
+            <h1>
+                Because... 💕
+            </h1>
+
+            <p>
+                Texting is nice.
+            </p>
+
+            <p>
+                Sending memes is nice.
+            </p>
+
+            <p>
+                Sending emojis is nice.
+            </p>
+
+            <h2>
+                BUT HEARING YOUR VOICE... 🥺
+            </h2>
+
+            <p>
+                hits completely different.
+            </p>
+
+            <button
+                class="next-btn"
+                onclick="nextPage()">
+
+                Continue 💗
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 5
+    ====================================================== -->
+
+    <section class="page">
+
+        <div class="card">
+
+            <img
+                src="mee.gif"
+                class="gif"
+                alt="Cute GIF">
+
+            <h1>
+                MANGRAJ... 🥺
+            </h1>
+
+            <p>
+                Imagine this...
+            </p>
+
+            <div class="dramatic-box">
+
+                <p>
+                    📱 Phone in hand...
+                </p>
+
+                <p>
+                    🎧 Earphones ready...
+                </p>
+
+                <p>
+                    😊 Your voice playing...
+                </p>
+
+                <h2>
+                    PERFECT MOMENT ✨
+                </h2>
+
+            </div>
+
+            <p>
+                So please don't make me wait forever 😭
+            </p>
+
+            <button
+                class="next-btn"
+                onclick="nextPage()">
+
+                One last surprise 👀
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 6
+    ====================================================== -->
+
+    <section class="page">
+
+        <div class="card">
+
+            <img
+                src="cute-girl-jumping-with-joy-and-fun-cartoon-character-png.webp"
+                class="friend-photo"
+                alt="MANGRAJ">
+
+            <h1>
+                MANGRAJ 💗
+            </h1>
+
+            <p>
+                This entire website...
+            </p>
+
+            <p>
+                all these pages...
+            </p>
+
+            <p>
+                all these silly surprises...
+            </p>
+
+            <h2>
+                ...were just for ONE little request. 🥺
+            </h2>
+
+            <div class="call-icon">
+                📞
+            </div>
+
+            <h1>
+                WILL YOU CALL ME?
+            </h1>
+
+            <div class="buttons">
+
+                <button
+                    class="yes-btn"
+                    onclick="yesCall()">
+
+                    YES 📞💗
+
+                </button>
+
+                <button
+                    class="no-btn"
+                    id="noBtn"
+                    onmouseover="moveNoButton()"
+                    ontouchstart="moveNoButton()">
+
+                    NO 😭
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL PAGE
+    ====================================================== -->
+
+    <section class="page final-page">
+
+        <div class="card">
+
+            <div class="fireworks">
+                🎆 ✨ 🎆
+            </div>
+
+            <h1>
+                YAYYYYY! 🥹💗
+            </h1>
+
+            <img
+                src="happy.gif"
+                class="gif"
+                alt="Happy GIF">
+
+            <h2>
+                MANGRAJ IS CALLING! 📞
+            </h2>
+
+            <p>
+                Okay okay... I'm ready! 😂
+            </p>
+
+            <p>
+                Don't keep me waiting now 😭❤️
+            </p>
+
+            <div class="heart">
+                ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =========================
+           VARIABLES
+        ========================== */
+
+        let currentPage = 0;
+
+        const pages =
+            document.querySelectorAll(".page");
+
+        const music =
+            document.getElementById("bgMusic");
+
+
+
+        /* =========================
+           START MUSIC
+        ========================== */
+
+        function startMusic() {
+
+            if (music.paused) {
+
+                music.volume = 0.35;
+
+                music.play().catch(() => {
+
+                    console.log(
+                        "Music waiting for user interaction."
+                    );
+
+                });
+
+            }
+
+        }
+
+
+
+        /*
+         Modern browsers usually block
+         autoplay until the user interacts.
+        */
+
+        document.addEventListener(
+            "click",
+            startMusic,
+            { once: true }
+        );
+
+
+
+        /* =========================
+           NEXT PAGE
+        ========================== */
+
+        function nextPage() {
+
+            startMusic();
+
+            pages[currentPage]
+                .classList
+                .remove("active");
+
+            currentPage++;
+
+            if (
+                currentPage >= pages.length
+            ) {
+
+                currentPage =
+                    pages.length - 1;
+            }
+
+            pages[currentPage]
+                .classList
+                .add("active");
+
+        }
+
+
+
+        /* =========================
+           YES BUTTON
+        ========================== */
+
+        function yesCall() {
+
+            startMusic();
+
+            pages[currentPage]
+                .classList
+                .remove("active");
+
+            currentPage =
+                pages.length - 1;
+
+            pages[currentPage]
+                .classList
+                .add("active");
+
+            createManyHearts();
+
+        }
+
+
+
+        /* =========================
+           NO BUTTON
+        ========================== */
+
+        function moveNoButton() {
+
+            const button =
+                document.getElementById("noBtn");
+
+            const x =
+                (Math.random() * 220) - 110;
+
+            const y =
+                (Math.random() * 100) - 50;
+
+            button.style.transform =
+                `translate(${x}px, ${y}px)`;
+
+        }
+
+
+
+        /* =========================
+           CREATE HEART
+        ========================== */
+
+        function createHeart() {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "heart-particle";
+
+            const hearts = [
+
+                "❤️",
+                "💗",
+                "💖",
+                "💕",
+                "💓",
+                "💘",
+                "💝"
+
+            ];
+
+            heart.innerHTML =
+                hearts[
+                    Math.floor(
+                        Math.random() *
+                        hearts.length
+                    )
+                ];
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.fontSize =
+                (15 + Math.random() * 30)
+                + "px";
+
+            heart.style.animationDuration =
+                (4 + Math.random() * 4)
+                + "s";
+
+            document.body.appendChild(heart);
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 8000);
+
+        }
+
+
+
+        /* =========================
+           CONTINUOUS HEARTS
+        ========================== */
+
+        setInterval(
+            createHeart,
+            700
+        );
+
+
+
+        /* =========================
+           MANY HEARTS
+        ========================== */
+
+        function createManyHearts() {
+
+            for (
+                let i = 0;
+                i < 35;
+                i++
+            ) {
+
+                setTimeout(() => {
+
+                    createHeart();
+
+                }, i * 100);
+
+            }
+
+        }
+
+
+
+        /* =========================
+           KEYBOARD NAVIGATION
+        ========================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Enter" ||
+                    event.key === "ArrowRight"
+                ) {
+
+                    nextPage();
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+</html>
+```
